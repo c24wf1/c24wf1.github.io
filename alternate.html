@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.weekend{
+			border:1px solid black;
+			color:green;
+			width:100px;
+			height:100px;
+			margin:5px;
+			background-image:src="Tsst04.jpg">
+();
+			background-size:contain;
+			background-repeat: no-repeat;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function makeWeekend (fred) {
+			let box = document.createElement("div");
+			document.body.appendChild(box);
+			box.classList.add("weekend");
+			box.innerText=fred;
+
+		};
+
+
+		for(var i=0; i<5000; i=i+1){makeWeekend(i)}
+
+
+
+// setInterval(makeWeekend, 100)
+
+
+	</script>
+
+</body>
+</html>
