@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <style type="text/css"> 
+  
+  #title{
+    font-family: 'Bungee Shade', cursive;
+    font-size: 50px;
+    text-align:center;
+    color: #ffaa80;
+  }
+  
+  #names {
+      font-size: 20px;
+      color: #00cc99;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    padding: 5px;
+  
+    }
+    #instruct {
+    font-size: 20px;
+    font-family: 'Baloo Thambi 2', cursive;
+    text-align: center;
+    color: grey;
+    line-height: 5px
+    }
+
+    a {
+      text-decoration: none;
+      color: #4d79ff;
+    }
+
+    a:hover {
+      color: #aa80ff;
+  }
+      .writing{
+        color: #aa80ff;
+        font-family: 'Baloo Thambi 2', cursive;
+			  font-size:10px;
+			  display: relative;
+			  display: inline-block;
+			  margin:5px;
+			  width:60px;
+		  	height:60px;
+			  background-image:url(https://cdn.glitch.com/7075f654-46de-43f9-8a0a-fc0270edb1b0%2Fsmile.png?v=1608261013335);
+			  background-size:contain;
+			  background-repeat:no-repeat;
+        transition: ease-in-out .1s;
+		}
+      .writing:hover{
+        color: #4d79ff;
+        font-family: 'Baloo Thambi 2', cursive;
+			  font-size:10px;
+			  display: relative;
+			  display: inline-block;
+			  margin:5px;
+			  width:60px;
+		  	height:60px;
+        background-image:url(https://cdn.glitch.com/7075f654-46de-43f9-8a0a-fc0270edb1b0%2FScreen%20Shot%202020-12-17%20at%2010.27.24%20PM.png?v=1608262071424);
+        background-size:contain;
+			  background-repeat:no-repeat;
+        transition: ease-in-out .1s;
+      }
+    </style>
+    <title>For Loop</title>
+
+    <!-- import the webpage's stylesheet -->
+  
+    
+  </head>
+  <body>
+    <h1 id="title">For Loop Codesketch :)</h1>
+    <p1 id="names">
+      This codesketch is made by: 
+      <a href="https://c24hl.github.io">Haeon</a>,
+      <a href="https://c24wf1.github.io">Will</a>, and
+      <a href="https://c24jy.github.io">Julie!</a></p1>
+    <br>
+    <p2 id="instruct">Check in the console for the challenge! :)</p2>
+    
+    <script type="text/javascript">
+    for (var x = 0; x < 1000; x=x+1) {
+        if (x % 3===0 && x % 5===0){         
+          console.log("fizz buzz")
+             }
+        else if (x % 3===0 ){
+           
+           console.log("fizz")
+         }  
+        else if (x % 5===0) {
+           console.log("buzz")
+        }
+        else {
+            console.log(x); 
+             }
+            
+    }  
+      
+    function repeat (x){
+      let it = document.createElement('div');
+      document.body.appendChild(it);
+      it.classList.add("writing");
+      it.innerText = x; 
+    };
+      
+    
+    for (let i=1;i<501; i=i+1) {repeat(i)}
+    </script>
+    
+  </body>
+</html>
